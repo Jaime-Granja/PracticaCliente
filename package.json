@@ -10,10 +10,6 @@
   "name": "timer",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
-  },
   "dependencies": {
     "acorn": "^8.14.0",
     "ajv": "^8.17.1",
@@ -249,7 +245,8 @@
     "yocto-queue": "^0.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
