@@ -1,0 +1,77 @@
+/*!***************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
+  \***************************************************************************************************************/
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c36;
+  color: #fff;
+  margin: 0;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.timer {
+  background: #1e1e2e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.numbers {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.numbers div {
+  background: #3b3f51;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #0056b3;
+}
+
+.setButtons,
+.controlButtons {
+  margin-top: 10px;
+}
+.setButtons button,
+.controlButtons button {
+  background: #28a745;
+}
+.setButtons button:hover,
+.controlButtons button:hover {
+  background: #1e7e34;
+}
+
+#stopButton {
+  background: #dc3545;
+}
+#stopButton:hover {
+  background: #a71d2a;
+}

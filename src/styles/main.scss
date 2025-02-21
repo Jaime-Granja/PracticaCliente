@@ -1,0 +1,96 @@
+// Variables
+$primary-color: #007bff;
+$hover-color: #0056b3;
+$set-button-color: #28a745;
+$set-button-hover: #1e7e34;
+$stop-button-color: #dc3545;
+$stop-button-hover: #a71d2a;
+$background-dark: #282c36;
+$background-light: #3b3f51;
+$timer-bg: #1e1e2e;
+$font-family: 'Arial', sans-serif;
+
+// General Body Styles
+body {
+  font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: $background-dark;
+  color: #fff;
+  margin: 0;
+}
+
+// Paragraph Styles
+p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+// Timer Container
+.timer {
+  background: $timer-bg;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+// Numbers Styles
+.numbers {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  div {
+    background: $background-light;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
+// Button Styles
+button {
+  background: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+// Set and Control Buttons
+.setButtons,
+.controlButtons {
+  margin-top: 10px;
+
+  button {
+    background: $set-button-color;
+    
+    &:hover {
+      background: $set-button-hover;
+    }
+  }
+}
+
+// Stop Button
+#stopButton {
+  background: $stop-button-color;
+
+  &:hover {
+    background: $stop-button-hover;
+  }
+}
