@@ -1,3 +1,4 @@
+import { DEFAULT_TIME } from "../constants.js";
 import Timer from "../timerEntity.js";
 
 /**
@@ -18,4 +19,9 @@ export const decreaseTimer = (timer) => {
     let remainingSeconds = timer.remainingTime % 60
     timer.remainingTime -= (remainingSeconds || 60)
      
+}
+
+
+export const resetTimer = (timer) => {
+     timer.remainingTime = DEFAULT_TIME
 }

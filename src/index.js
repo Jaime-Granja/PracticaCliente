@@ -3,7 +3,7 @@ import './styles/main.scss';
 
 import {TIME_FORMAT} from "./constants.js"
 import Timer from "./timerEntity.js"
-import { decreaseTimer, increaseTimer } from "./useCases/changeValueTimer.js"
+import { decreaseTimer, increaseTimer, resetTimer } from "./useCases/changeValueTimer.js"
 
 
 //TO-DO: Get last timer from local storage
@@ -42,6 +42,13 @@ const subMinute = () => {
     decreaseTimer(timer)
     refreshUI(minutesText, secondsText, timer)
 }
+
+//Resetear Tiempo
+const resetMinutes = () => {
+  resetTimer(timer)
+  refreshUI(minutesText, secondsText, timer)
+}
+
 //Comenzar Temporizador
 const startButton = document.getElementById("startButton")
 const startTimer = () => timer.start(refresh)
@@ -82,6 +89,4 @@ stopButton.addEventListener("click", stop)
 downButton.addEventListener("click", subMinute)
 upButton.addEventListener("click", addMinute)
 
-//resetButton.addEventListener("click", resetMinutes)
-
-
+resetButton.addEventListener("click", resetMinutes)
