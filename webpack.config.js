@@ -1,9 +1,9 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');  // Importamos el plugin
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',  // Asegúrate de cambiar a 'production' cuando estés listo para producción
+  mode: 'development', 
   entry: './src/index.js',
   output: {
     filename: 'main.js',
@@ -39,7 +39,6 @@ module.exports = {
     alias: {
       '@useCases': path.resolve(__dirname, 'src/useCases/'),
       '@constants': path.resolve(__dirname, 'src/constants/'),
-      // Agrega más alias según sea necesario
     },
   },
 };

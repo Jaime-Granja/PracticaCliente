@@ -27,4 +27,5 @@ export const decreaseTimer = (timer) => {
 
 export const resetTimer = (timer) => {
      timer.remainingTime = DEFAULT_TIME
+     
 }

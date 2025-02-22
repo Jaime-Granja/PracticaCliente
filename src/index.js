@@ -47,6 +47,7 @@ const subMinute = () => {
 const resetMinutes = () => {
   resetTimer(timer)
   refreshUI(minutesText, secondsText, timer)
+  timer.stop();
 }
 
 //Comenzar Temporizador
