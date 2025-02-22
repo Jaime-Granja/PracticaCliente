@@ -7,7 +7,9 @@ import Timer from "../timerEntity.js";
  */
 
 export const increaseTimer = (timer) => {
-    timer.remainingTime += 60 - (timer.remainingTime % 60)
+        timer.remainingTime += 60 - (timer.remainingTime % 60)
+    
+    
      
 }
 /**
@@ -16,9 +18,10 @@ export const increaseTimer = (timer) => {
  */
 
 export const decreaseTimer = (timer) => {
-    let remainingSeconds = timer.remainingTime % 60
-    timer.remainingTime -= (remainingSeconds || 60)
-     
+    if (timer.remainingTime > 0) {
+        let remainingSeconds = timer.remainingTime % 60
+        timer.remainingTime -= (remainingSeconds || 60)
+    }
 }
 
 

@@ -21,8 +21,9 @@ class Timer {
     start(callback) {
         this.interval = setInterval(()=>{
             this.remainingTime--
-            if (this.remainingTime == 0) {
+            if (this.remainingTime <= 0) {
                 this.stop()
+                this.remainingTime = 0
             }
             callback(this.remainingTime)
         },1000)
