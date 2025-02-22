@@ -35,4 +35,11 @@ module.exports = {
       filename: 'index.html'  
     })
   ],
+  resolve: {
+    alias: {
+      '@useCases': path.resolve(__dirname, 'src/useCases/'),
+      '@constants': path.resolve(__dirname, 'src/constants/'),
+      // Agrega más alias según sea necesario
+    },
+  },
 };
