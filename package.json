@@ -255,7 +255,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jaime Granja",
   "license": "ISC",
-  "description": ""
+  "description": "Aplicación de cronómetro"
 }
